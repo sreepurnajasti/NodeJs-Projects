@@ -30,7 +30,7 @@ http.createServer(function(req, res){
     } else if(stats.isDirectory()){
       console.log('directory')
       res.writeHead(302, {
-        'Location': 'page.html'
+        'Location': 'index.html'
       })
       res.end()
     } else{
